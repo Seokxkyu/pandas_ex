@@ -10,4 +10,8 @@ df.iloc[:, 1:3]
 df1.dropna(how="any")
 df1.fillna(value=5)
 pd.isna(df1)
+
+# lambda 함수 적용 가능
+df.agg(lambda x: np.mean(x) * 5.6)
+df.transform(lambda x: x * 101.2)
 ```
